@@ -3,7 +3,8 @@ class Hero:
     def __init__(self, input_name, input_health, input_power, input_armor) -> None:
         self.name = input_name
         self.health = input_health
-        self.power = input_power
+        # self. (self dot) tidak harus sama dengan input fungsi
+        self.kekuatan = input_power 
         self.armor = input_armor
         pass
 
@@ -12,7 +13,8 @@ hero2 = Hero('Mirana', 100, 100, 350)
 hero3 = Hero('Ucup', 200, 170, 180)
 
 print(hero1.name)
-print(hero2.power)
+# disesuaikan dengan self.kekuatan
+print(hero2.kekuatan)
 print(hero3.armor)
 
 # untuk mengatahui atribut apa saja yang dimiliki
